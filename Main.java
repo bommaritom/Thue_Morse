@@ -19,7 +19,6 @@ public class Main {
 		
 		Scanner scanner = new Scanner(System.in);
 		String input = (String)scanner.next();
-		System.out.println("You said:" + "\"" + input + "\"");
 		
 		if ( input.equals("FAIR") ){
 			fair();
@@ -36,7 +35,7 @@ public class Main {
 	}
 	
 	public static void fair(){
-		ArrayList<Integer> fairSequence = generateFairSequence(100);
+		ArrayList<Integer> fairSequence = generateFairSequence(1000);
 		visualize(fairSequence);
 		prompt();
 	}
